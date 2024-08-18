@@ -13,6 +13,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
@@ -194,10 +195,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp Q  &kp W  &kp E    &kp R  &kp T         &kp Y       &kp U                 &kp I      &kp O    &kp P
-         &kp A  &kp S  &kp D    &kp F  &kp G         &kp H       &kp J                 &kp K      &kp L    &kp ENTER
-&kp TAB  &kp Z  &kp X  &kp C    &kp V  &kp B         &kp N       &kp M                 &kp COMMA  &kp DOT  &kp RIGHT_GUI  &kp BACKSPACE
-                       &kp TAB  &mo 2  &kp LSHIFT    &kp RSHIFT  &hml RIGHT_ALT SPACE  &mo 1
+         &kp Q  &kp W  &kp E  &kp R             &kp T         &kp Y       &kp U                 &kp I      &kp O    &kp P
+         &kp A  &kp S  &kp D  &kp F             &kp G         &kp H       &kp J                 &kp K      &kp L    &kp ENTER
+&kp TAB  &kp Z  &kp X  &kp C  &kp V             &kp B         &kp N       &kp M                 &kp COMMA  &kp DOT  &kp RIGHT_GUI  &kp BACKSPACE
+                       &mo 2  &kp LEFT_CONTROL  &kp LSHIFT    &kp RSHIFT  &hml RIGHT_ALT SPACE  &mo 1
             >;
         };
 
@@ -212,10 +213,10 @@
 
         nav_layer {
             bindings = <
-       &none      &none         &none             &none       &none    &none  &kp PG_UP  &kp HOME  &kp END  &none
-       &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LSHIFT  &none    &none  &kp LEFT   &kp DOWN  &kp UP   &kp RIGHT
-&none  &none      &none         &none             &none       &none    &none  &kp PG_DN  &none     &none    &none      &none
-                                &none             &none       &none    &none  &kp PSCRN  &none
+       &none   &kp K_FORWARD  &none   &kp K_BACK  &none    &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR_ALL  &none
+       &trans  &mkp LCLK      &trans  &mkp RCLK   &none    &none  &trans        &trans        &trans          &trans
+&none  &none   &none          &none   &none       &none    &none  &trans        &none         &none           &none   &none
+                              &none   &none       &none    &none  &trans        &none
             >;
         };
 
