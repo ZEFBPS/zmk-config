@@ -194,19 +194,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp J         &kp C            &kp Y                &kp F         &kp K         &kp Z             &kp W         &kp U                 &key_repeat  &kp Q
-                &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_COMMAND T  &hml LSHFT H  &kp P         &kp M             &hmr RSHFT N  &hmr RIGHT_COMMAND I  &hmr LALT A  &hmr RCTRL O
-&kp UNDERSCORE  &kp X         &kp V            &kp G                &lt 1 D       &kp B         &kp SINGLE_QUOTE  &lt 1 L       &kp COMMA             &kp DOT      &kp FSLH      &kp Q
-                                               &kp TAB              &lt 2 E       &lt 3 BSPC    &lt 4 RETURN      &lt 5 SPACE   &lt 0 ESCAPE
+         &kp Q  &kp W  &kp E    &kp R    &kp T         &kp Y       &kp U                 &kp I      &kp O    &kp P
+         &kp A  &kp S  &kp D    &kp F    &kp G         &kp H       &kp J                 &kp K      &kp L    &kp ENTER
+&kp TAB  &kp Z  &kp X  &kp C    &kp V    &kp B         &kp N       &kp M                 &kp COMMA  &kp DOT  &kp RIGHT_GUI  &kp BACKSPACE
+                       &kp TAB  &lt 2 E  &kp LSHIFT    &kp RSHIFT  &hml RIGHT_ALT SPACE  &mo 1
             >;
         };
 
         accent_layer {
             bindings = <
-        &trans  &kp RA(C)  &trans  &trans    &trans    &trans  &trans  &u_acute  &a_tilde  &o_tilde
-        &trans  &trans     &trans  &trans    &trans    &trans  &trans  &i_acute  &a_acute  &o_acute
-&trans  &trans  &trans     &trans  &e_circ   &trans    &trans  &trans  &a_grave  &a_circ   &o_circ   &trans
-                           &trans  &e_acute  &trans    &trans  &trans  &trans
+        &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans       &trans     &trans          &u_acute      &a_tilde   &trans
+        &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans       &trans     &trans          &kp UP_ARROW  &a_acute   &trans
+&trans  &kp N0  &kp N7        &kp N8        &kp N9        &kp LCMD     &trans     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans
+                              &trans        &e_acute      &kp LSHFT    &kp RSHFT  &trans          &trans
             >;
         };
 
