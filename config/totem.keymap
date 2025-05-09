@@ -10,11 +10,12 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAV  1
@@ -213,10 +214,10 @@
 
         nav_layer {
             bindings = <
-       &none   &kp C_AC_FORWARD  &none     &kp C_AC_BACK  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR_ALL  &none
-       &trans  &mkp LCLK         &mkp MB3  &mkp RCLK      &none    &none         &trans        &trans        &trans          &trans
-&none  &none   &none             &none     &none          &none    &none         &trans        &none         &none           &none   &none
-                                 &none     &none          &none    &none         &trans        &none
+       &none           &kp C_AC_FORWARD  &mkp MCLK       &kp C_AC_BACK    &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR_ALL  &none
+       &msc SCRL_UP    &mkp LCLK         &mmv MOVE_UP    &mkp RCLK        &none    &none         &trans        &trans        &trans          &trans
+&none  &msc SCRL_DOWN  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none    &none         &trans        &none         &none           &none   &none
+                                         &none           &none            &none    &none         &trans        &none
             >;
         };
 
