@@ -1,7 +1,10 @@
 include:
   - board: xiao_ble/nrf52840/zmk
     shield: totem_left
+    artifact-name: totem_left-xiao_ble
   - board: xiao_ble/nrf52840/zmk
     shield: totem_right
+    artifact-name: totem_right-xiao_ble
   - board: xiao_ble/nrf52840/zmk
     shield: settings_reset
+    artifact-name: settings_reset-xiao_ble
